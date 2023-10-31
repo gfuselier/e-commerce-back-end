@@ -20,7 +20,7 @@ Product.belongsToMany(Tag, {
     model: ProductTag,
     unique: false 
   },
-  // Define an alias for when data is retrieved. must use this same alias in the routes
+  // Defines an alias for when data is retrieved. must use this same alias in the routes
   as: 'product_tags'
 });
 // Tags belongToMany Products (through ProductTag)
